@@ -105,14 +105,14 @@ header banner design
 /* -----------------------------------------
 header banner  images design 
 -------------------------------------------*/
-.heading-img-conatiner img {
+.heading-img-container img {
   margin-top: 50px;
   width: 100%;
   text-align: center;
 }
 
 /* ------------------------------------
-First section of the main part which include the photo album and feature list
+First section design of the main part which include the photo album and feature list
 --------------------------------------------------- */
 
 .section-flex-container-1 {
@@ -160,7 +160,7 @@ First section of the main part which include the photo album and feature list
   margin-bottom: 32px;
 }
 /* -------------------------------------------
-main second section design
+ Second section design of the main.
 --------------------------------- */
 .section-flex-container-2 {
   margin-left: 180px;
@@ -172,9 +172,6 @@ main second section design
   grid-column-gap: 54px;
 }
 .experience-side {
-  /* padding-right: 180px; */
-
-  /* border: 5px solid red; */
   position: relative;
   width: 100%;
 }
@@ -195,8 +192,6 @@ main second section design
   padding-bottom: 70px;
 }
 .love-and-enjoy {
-  /* padding-left: 180px; */
-  /* border: 5px solid yellow; */
   margin-bottom: 38px;
 }
 .love-and-enjoy-title {
@@ -234,7 +229,7 @@ main second section design
 }
 
 /* -------------------------------------------
-main third section design
+Third section design of the main.
 --------------------------------- */
 
 .section-container-3 {
@@ -328,8 +323,8 @@ main third section design
   filter: grayscale(100%);
 }
 
-/* ........................................
-founder section design which is my 5th section
+/* ...........................................
+founder section design which is my 5th section of the main.
 ............................................ */
 
 .section-container-5 {
@@ -366,7 +361,6 @@ founder section design which is my 5th section
   grid-row-gap: 20px;
 }
 .achievement {
-  /* border:3px solid #131313; */
   padding: 10px;
 }
 .achievment-title {
@@ -539,7 +533,7 @@ screen responsive for fourth section
 }
 
 /* -------------------------------------
-screen responsive for fourth section
+screen responsive for 5th section
 ------------------------------------- */
 @media screen and (max-width: 576px) {
   .container-5-for-flex {
