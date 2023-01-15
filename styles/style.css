@@ -327,19 +327,72 @@ main third section design
   filter: grayscale(100%);
 }
 
-/* footer styles */
+/* ........................................
+founder section design which is my 5th section
+............................................ */
 
-.footer{
-  margin-left:  150px; 
-  margin-right: 150px;
-  margin-bottom: 50px;
+.section-container-5 {
+  margin-right: 180px;
+  margin-left: 180px;
+  margin-bottom: 100px;
+}
+.container-5-for-flex {
+  display: flex;
+  gap: 30px;
+}
+.founder-img img {
+  width: 400px;
+  
+}
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.position-title {
+  color: rgb(238, 20, 20);
+  margin-bottom: 8px;
+}
+.position-des {
+  font-weight: 300;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 15px;
+}
+.principal-achievements-for-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap:20px;
+  grid-row-gap:20px;
 
 }
-.footer p{
+.achievement{
+  /* border:3px solid #131313; */
+  padding: 10px;
+}
+.achievment-title{
+  color: rgb(238, 20, 20);
+  margin-bottom: 8px;
+}
+.achievment-des{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+
+
+/* footer styles */
+
+.footer {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 50px;
+}
+.footer p {
   text-align: center;
   background: rgba(255, 143, 14, 0.389);
   padding-top: 30px;
-  padding-bottom:30px ;
+  padding-bottom: 30px;
 }
 
 /* -------------------------------------
@@ -415,7 +468,7 @@ screen responsive for main first section
   .photo-album {
     grid-template-columns: repeat(1, 1fr);
   }
-  
+
   .photo-album img {
     width: 300px;
     height: 300px;
@@ -450,8 +503,11 @@ screen responsive for main second section
   .experience-side .btn-style {
     position: static;
     font-size: 15px;
-    margin-left: 30%;
+    margin-left: 30px;
     margin-top: 30px;
+  }
+  .principal-achievements-for-grid{
+    grid-template-columns: repeat(1,1fr);
   }
 }
 
@@ -474,22 +530,39 @@ screen responsive for main third section
 screen responsive for fourth section
 ------------------------------------- */
 @media screen and (max-width: 576px) {
-  .sponsor-logos{
+  .sponsor-logos {
     flex-direction: column;
     gap: 70px;
   }
-  .section-container-4{
+  .section-container-4 {
     margin-left: 80px;
     margin-right: 100px;
   }
 }
 
 /* -------------------------------------
+screen responsive for fourth section
+------------------------------------- */
+@media screen and (max-width: 576px) {
+  .container-5-for-flex{
+    flex-direction: column;
+  }
+  .section-container-5{
+    margin-left: 50px;
+    margin-right:50px ;
+  }
+  .founder-img img{
+    width: 200px;
+  }
+}
+
+
+/* -------------------------------------
 screen responsive for footer section
 ------------------------------------- */
 
 @media screen and (max-width: 576px) {
-  .footer{
+  .footer {
     margin-left: 80px;
     margin-right: 80px;
   }
