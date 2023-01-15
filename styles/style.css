@@ -14,7 +14,7 @@ body {
 heading styles
  ----------------------------------------*/
 .header {
-  padding: 50px 240px;
+  padding: 50px 180px;
   background: rgba(255, 144, 14, 0.1);
 }
 /* ---------------------------------------
@@ -53,7 +53,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: rgb(236, 228, 228);
-  background: #ff900e;
+  background: #ff58339a;
   border-radius: 3px;
 }
 input[type="checkbox"] {
@@ -68,6 +68,8 @@ header banner design
   margin-top: 102px;
   margin-bottom: 33px;
   text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 .banner-title {
   font-weight: 700;
@@ -111,9 +113,7 @@ header banner  images design
 /* ------------------------------------
 First section of the main part which include the photo album and feature list
 --------------------------------------------------- */
-main {
-  /* margin: 50px 240px; */
-}
+
 .section-flex-container-1 {
   margin-top: 50px;
   margin-bottom: 130px;
@@ -131,7 +131,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 24px;
   grid-row-gap: 24px;
-  padding-left: 240px;
+  padding-left: 180px;
 }
 .feature {
   padding-right: 180px;
@@ -162,34 +162,47 @@ main {
 main second section design
 --------------------------------- */
 .section-flex-container-2 {
-  margin: 20px 200px;
-  display: flex;
-  align-items: center;
-  gap: 54px;
+  margin-left: 180px;
+  margin-right: 180px;
 }
-.experience-side{
-    position: relative;
-    border: 5px solid red;
+.grid-for-container-2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 54px;
 }
-.experience-side .btn-style{
-    /* position: absolute; */
-    
-    
+.experience-side {
+  /* padding-right: 180px; */
+
+  /* border: 5px solid red; */
+  position: relative;
+  width: 100%;
+}
+.experience-side .btn-style {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+
+  font-weight: 700;
+  font-size: 30px;
 }
 
-.experience-side  img {
-    width: 708px;
-    height: 982px;
+.experience-side img {
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
   padding-left: 70px;
-  /* padding-bottom: 0px; */
-  
-
+  padding-bottom: 70px;
+}
+.love-and-enjoy {
+  /* padding-left: 180px; */
+  /* border: 5px solid yellow; */
+  margin-bottom: 38px;
 }
 .love-and-enjoy-title {
   color: #131313;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 35px;
+  margin-top: 39px;
   margin-bottom: 24px;
   padding-left: 21px;
   border-left: 3px solid #ff900e;
@@ -219,12 +232,122 @@ main second section design
   font-size: 16px;
 }
 
+/* -------------------------------------------
+main third section design
+--------------------------------- */
+
+.section-container-3 {
+  margin-top: 130px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.facts-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.facts-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 100px;
+}
+.facts-box-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 124px;
+  padding-left: 60px;
+  margin-bottom: 180px;
+}
+.box {
+  padding: 20px 0px 59px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  width: 241.83px;
+  height: 200px;
+}
+.icon-img {
+  width: 47.39px;
+  height: 45.22px;
+  margin-bottom: 8px;
+}
+.digit {
+  font-weight: 600;
+  font-size: 45px;
+  color: #424242;
+  margin-bottom: 5px;
+}
+.box-description {
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+}
+.box {
+  transition: 1s;
+}
+.box:hover {
+  background: #ff1d5984;
+  transform: scale(1.2) rotate(360deg);
+}
+
+/* -------------------------------------------
+ fourth section design of main
+--------------------------------- */
+
+.section-container-4 {
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-bottom: 130px;
+}
+.sponsor-title {
+  color: #131313;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.sponsor-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.sponsor-logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos-img {
+  width: 160px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+/* footer styles */
+
+.footer{
+  margin-left:  150px; 
+  margin-right: 150px;
+  margin-bottom: 50px;
+
+}
+.footer p{
+  text-align: center;
+  background: rgba(255, 143, 14, 0.389);
+  padding-top: 30px;
+  padding-bottom:30px ;
+}
+
 /* -------------------------------------
 screen responsive for nav
 ------------------------------------- */
 @media screen and (max-width: 576px) {
   .header {
-    padding: 20px 100px;
+    padding: 20px 20px;
     background: rgba(255, 144, 14, 0.1);
   }
   .header .heading-nav-container nav .menu-btn {
@@ -268,6 +391,10 @@ screen responsive for nav
     font-size: 32px;
     margin-top: 200px;
   }
+  .heading-banner-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 /* -------------------------------------
 screen responsive for main first section
@@ -279,15 +406,91 @@ screen responsive for main first section
     padding-left: 90px;
   }
   .photo-album {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 30px;
+    padding-right: 0px;
   }
-  .section-flex-container {
+  .section-flex-container-1 {
     flex-direction: column;
   }
   .photo-album {
     grid-template-columns: repeat(1, 1fr);
   }
-  .feature-title {
+  
+  .photo-album img {
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+  }
+}
+
+/* -------------------------------------
+screen responsive for main second section
+------------------------------------- */
+
+@media screen and (max-width: 576px) {
+  .grid-for-container-2 {
+    grid-template-columns: 100%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .section-flex-container-2 {
+    margin: 0;
+  }
+  .love-and-enjoy {
+    padding: 0;
+  }
+  .experience-side {
+    padding: 0;
+  }
+  .experience-side img {
+    width: 100%;
+    padding: 0;
+  }
+  .experience-side .btn-style {
+    position: static;
+    font-size: 15px;
+    margin-left: 30%;
+    margin-top: 30px;
+  }
+}
+
+/* -------------------------------------
+screen responsive for main third section
+------------------------------------- */
+
+@media screen and (max-width: 576px) {
+  .facts-box-container {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .section-container-3 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+/* -------------------------------------
+screen responsive for fourth section
+------------------------------------- */
+@media screen and (max-width: 576px) {
+  .sponsor-logos{
+    flex-direction: column;
+    gap: 70px;
+  }
+  .section-container-4{
+    margin-left: 80px;
+    margin-right: 100px;
+  }
+}
+
+/* -------------------------------------
+screen responsive for footer section
+------------------------------------- */
+
+@media screen and (max-width: 576px) {
+  .footer{
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }
