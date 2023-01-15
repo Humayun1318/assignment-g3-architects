@@ -30,6 +30,7 @@ nav .logo {
   color: #131313;
   font-weight: 700;
   font-size: 30px;
+  cursor: pointer;
 }
 
 nav ul {
@@ -40,7 +41,7 @@ nav ul li {
   margin: 0 5px;
 }
 nav ul li a {
-  color: #424242;
+  color: #250c0c;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -53,7 +54,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: rgb(236, 228, 228);
-  background: #ff58339a;
+  background: #ff9233d9;
   border-radius: 3px;
 }
 input[type="checkbox"] {
@@ -342,7 +343,6 @@ founder section design which is my 5th section
 }
 .founder-img img {
   width: 400px;
-  
 }
 .name {
   font-weight: 700;
@@ -362,24 +362,22 @@ founder section design which is my 5th section
 .principal-achievements-for-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap:20px;
-  grid-row-gap:20px;
-
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
-.achievement{
+.achievement {
   /* border:3px solid #131313; */
   padding: 10px;
 }
-.achievment-title{
+.achievment-title {
   color: rgb(238, 20, 20);
   margin-bottom: 8px;
 }
-.achievment-des{
+.achievment-des {
   font-weight: 400;
   font-size: 16px;
   color: #727272;
 }
-
 
 /* footer styles */
 
@@ -506,8 +504,8 @@ screen responsive for main second section
     margin-left: 30px;
     margin-top: 30px;
   }
-  .principal-achievements-for-grid{
-    grid-template-columns: repeat(1,1fr);
+  .principal-achievements-for-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -544,18 +542,17 @@ screen responsive for fourth section
 screen responsive for fourth section
 ------------------------------------- */
 @media screen and (max-width: 576px) {
-  .container-5-for-flex{
+  .container-5-for-flex {
     flex-direction: column;
   }
-  .section-container-5{
+  .section-container-5 {
     margin-left: 50px;
-    margin-right:50px ;
+    margin-right: 50px;
   }
-  .founder-img img{
+  .founder-img img {
     width: 200px;
   }
 }
-
 
 /* -------------------------------------
 screen responsive for footer section
